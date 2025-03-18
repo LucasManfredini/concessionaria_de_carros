@@ -22,7 +22,7 @@ function exibirListaCarros() {
                                 <td>{item.modelo}</td>
                                 <td><img src={item.foto} width='400px' alt=""></img></td>
                                 <td className="text-sm text-blue-600">
-                                    <Link href={'/detalhesProduto/' + item.id}>Ver Detalhes</Link>
+                                    <Link href={'/detalhesDoCarro/' + item.id}>Ver Detalhes</Link>
                                 </td>
                             </tr>
                         )

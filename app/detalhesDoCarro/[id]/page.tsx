@@ -6,10 +6,10 @@ type detalhesDoCarroProps = {
     }
 }
 
-function detalhesProduto(props: detalhesDoCarroProps) {
-    const produtoID = parseInt(props.params.id);
+function detalhesDoCarro(props: detalhesDoCarroProps) {
+    const carroID = parseInt(props.params.id);
     const carro = listaCarros.find(function (item) {
-        return item.id === produtoID;
+        return item.id === carroID;
     });
 
     return (
@@ -22,11 +22,9 @@ function detalhesProduto(props: detalhesDoCarroProps) {
                     <img src={carro?.foto} width="800px"></img>
                     <p className="text-gray-700"><strong>Ano: </strong>{carro?.ano}</p>
                     <p className="text-gray-700"><strong>Modelo: </strong>{carro?.modelo}</p>
-
-
                 </div>
             </div>
         </>
     )
 }
-export default detalhesProduto;
+export default detalhesDoCarro;
