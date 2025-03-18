@@ -11,7 +11,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <head>
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-        <title>Concessionari Manfredini</title>
+        <title>Concessionária Manfredini</title>
       </head>
       <body className='bg-gray-100'>
         <Header />
